@@ -1,0 +1,57 @@
+/*Website wide CSS*/
+
+/*Formatting the homepage images*/
+.gamepic{
+    padding-left: 25px;
+    padding-bottom: 25px;
+  padding-right: 25px;
+    padding-top: 25px;
+}
+
+/*To be used for pages that remain unbuilt*/
+.underdev{
+    
+    padding-left: 25px;
+    padding-bottom: 25px;
+  padding-right: 25px;
+    padding-top: 25px;
+    filter: grayscale(100%)
+}
+
+/*Homepage specific */
+.body1{
+    background-color: black;
+}
+
+/*Icon CSS for the footers */
+.fa{
+    
+    background-color: black;
+    color: white;
+    font-size: 10px;
+}
+.footer-copyright{
+    color: white;
+}
+
+/* Need to fix*/
+.WardLogo{
+    font-family: 'Monoton', cursive;
+    color: white;
+    font-size: 25px;
+}
+.WardImage{
+    padding-bottom: 23px;
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    height: 275px;
+}
+
+.SFVHead {
+    background-image: url(../img/SFV/StreetFighterRyu1.png);
+    height: inherit;
+}
+#standings {
+    font-color: white;
+}
