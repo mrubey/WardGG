@@ -45,8 +45,8 @@
         <img class="gamepic" src="../img/TeamLogos(SMITE)/CounterLogic.png">
         <img class="gamepic" src="../img/TeamLogos(SMITE)/EUnited.png">
         <img class="gamepic" src="../img/TeamLogos(SMITE)/Luminosity.png">
-        <img class="gamepic" src="../img/TeamLogos(SMITE)/SpaceStation.png">
-        <img class="gamepic" src="../img/TeamLogos(SMITE)/Splyce.png">
+        <a href="../TeamPages/Spacestation.php"><img class="gamepic" src="../img/TeamLogos(SMITE)/SpaceStation.png"></a>
+        <a href="../TeamPages/Spacestation.php"><img class="gamepic" src="../img/TeamLogos(SMITE)/Splyce.png"></a>
         <img class="gamepic" src="../img/TeamLogos(SMITE)/Trifecta.png">
         <img class="gamepic" src="../img/TeamLogos(SMITE)/Dignitas.png">
         <img class="gamepic" src="../img/TeamLogos(SMITE)/Mousesports.png">

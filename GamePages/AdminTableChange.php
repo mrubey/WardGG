@@ -17,36 +17,64 @@
 <?php
     $tableSelected = $_POST['table'];
 if($tableSelected === 'SmiteNA') {
-    echo '<select>
-        <option> Choose A Team</option>
-        <option value="CLG"> Counter Logic Gaming</option>
-        <option value="EU"> Eunited</option>
-        <option value="LG"> Luminosity Gaming</option>
-        <option value="SSG"> Spacestation Gaming</option>
-        <option value="SP"> Splyce</option>
-        <option value="TF"> Trifecta</option>';
+    echo '<form class="standingsChange" action="../GamePages/tableChanges/naTableChange.inc.php" method="POST">
+        <select name="naPosition">
+        <option> Choose A Standings Position to change</option>
+        <option value="1"> 1</option>
+        <option value="2"> 2</option>
+        <option value="3"> 3</option>
+        <option value="4"> 4</option>
+        <option value="5"> 5</option>
+        <option value="6"> 6</option>
+        </select>
+        <br>
+        <br>
+        <input type="text" name="team" placeholder="Team Name" />
+        <input type="text" name="wins" placeholder="Wins" />
+        <input type="text" name="losses" placeholder="Losses" />
+        <input type="submit" name="submit" value="Change these standings" />
+        </form>';
 } elseif($tableSelected === 'SmiteEU') {
-     echo '<select>
-        <option> Choose A Team</option>
-        <option value="DIG"> Dignitas</option>
-        <option value="ME"> Mousesports</option>
-        <option value="NRG"> NRG Esports</option>
-        <option value="OA"> Obey Alliance</option>
-        <option value="TR"> Team Rival</option>
-        <option value="SK"> SK Gaming</option>';
+     echo '<form class="standingsChange" action="../GamePages/tableChanges/euTableChange.inc.php" method="POST">
+        <select name="euPosition">
+        <option> Choose A Standings Position to change</option>
+        <option value="1"> 1</option>
+        <option value="2"> 2</option>
+        <option value="3"> 3</option>
+        <option value="4"> 4</option>
+        <option value="5"> 5</option>
+        <option value="6"> 6</option>
+        </select>
+        <br>
+        <br>
+        <input type="text" name="team" placeholder="Team Name" />
+        <input type="text" name="wins" placeholder="Wins" />
+        <input type="text" name="losses" placeholder="Losses" />
+        <input type="submit" name="submit" value="Change these standings" />
+        </form>';
 } elseif($tableSelected === 'League') {
-     echo '<select>
-        <option> Choose A Team</option>
-        <option value="100T"> 100 Thieves</option>
-        <option value="C9"> Cloud9</option>
-        <option value="CG"> Clutch Gaming</option>
-        <option value="clg"> Counter Logic Gaming</option>
-        <option value="EF"> Echo Fox</option>
-        <option value="FQ"> FlyQuest</option>
-        <option value="GG"> Golden Guardians</option>
-        <option value="OG"> Optic Gaming</option>
-        <option value="TL"> Team Liquid</option>
-        <option value="TSM"> Team SoloMid</option>';
+     echo '<form class="standingsChange" action="../GamePages/tableChanges/lcsTableChange.inc.php" method="POST">
+        <select name="lcsPosition">
+        <option> Choose A Standings Position to change</option>
+        <option value="1"> 1</option>
+        <option value="2"> 2</option>
+        <option value="3"> 3</option>
+        <option value="4"> 4</option>
+        <option value="5"> 5</option>
+        <option value="6"> 6</option>
+        <option value="7"> 7</option>
+        <option value="8"> 8</option>
+        <option value="9"> 9</option>
+        <option value="10"> 10</option>
+        </select>
+        </select>
+        <br>
+        <br>
+        <input type="text" name="team" placeholder="Team Name" />
+        <input type="text" name="wins" placeholder="Wins" />
+        <input type="text" name="losses" placeholder="Losses" />
+        <input type="submit" name="submit" value="Change these standings" />
+        </form>';
 }
    } else {
       echo '<h1> you are not logged in please go login!!</h1>';

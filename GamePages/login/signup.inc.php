@@ -38,6 +38,12 @@ if (isset($_POST['submit'])) {
                     //insert the user into the database
                     $sql = "INSERT INTO users(user_first, user_last, user_email, user_uid, user_pwd) VALUES ('$first', '$last', '$email', '$uid', '$hashedPwd');";
                     $results = mysqli_query($conn, $sql);
+                    $message = "Your Activation Code is ".$code."";
+                    $to=$email;
+                    $subject="Activation Code For Talkerscode.com";
+                    $from = 'kongwaralph@yahoo.com';
+                    $body='Thank you for signing up,';
+                    mail($email,$subject,$body);
                     header("Location: login.php?signup=success");
         exit();
                 }
