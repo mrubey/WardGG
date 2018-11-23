@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
-    <link rel="stylesheet" href="tableStyle.css">
+    <link rel="stylesheet" href="../css/TableStyle.css">
     
     <!-- Slick stylesheet -->
     <link rel="stylesheet" href="../css/slick/slick.css">
@@ -54,6 +54,7 @@
         <img class="gamepic" src="../img/TeamLogos(LoL)/TeamSoloMid.png">
         <img class="gamepic" src="../img/TeamLogos(LoL)/OpticGaming.png">
         <img class="gamepic" src="../img/TeamLogos(LoL)/TeamLiquid.png">
+        <img class="gamepic" src="../img/TeamLogos(LOL)/TeamSoloMid.png">
     </div>
     
     <!-- Team logo carousel 
@@ -65,13 +66,12 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-3">
-                <p class="text-center" style="color: white">Left Column Test</p>
                 
                 <a class="twitter-timeline" href="https://twitter.com/riotgames?ref_src=twsrc%5Etfw" data-tweet-limit="5">Tweets by riotgames</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
         
             <div class="col-sm-6">
-                <p class="text-center" style="color: white">Middle Column test</p>
+    <h1 id="standingsTitle" align="center">LCS NA Standings</h1>
     <table id="standings">
     <tr>
         <th>Position</th>
@@ -100,7 +100,6 @@
             </div>
 
             <div class="col-sm-3">
-                <p class="text-center" style="color: white">Right column test</p>
             <?php 
     include_once 'twitchLeague.php';
 ?>

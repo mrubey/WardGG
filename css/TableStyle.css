@@ -181,7 +181,7 @@ tbody tr:nth-child(even) {
 tbody tr {
   font-family: OpenSans-Regular;
   font-size: 15px;
-  color: #808080;
+  color: #black;
   line-height: 1.2;
   font-weight: unset;
 }
@@ -246,7 +246,7 @@ tbody tr:hover {
   table tbody tr td:before {
     font-family: OpenSans-Regular;
     font-size: 14px;
-    color: #ffffff;
+    color: white;
     line-height: 1.2;
     font-weight: unset;
     position: absolute;
@@ -255,4 +255,7 @@ tbody tr:hover {
     top: 0;
   }
   
+}
+#standingsTitle {
+    color: white;
 }

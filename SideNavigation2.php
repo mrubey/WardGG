@@ -64,19 +64,19 @@
     <body>
     <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="../index.php">Home</a>
-    <a href="../GamePages/League.php">League of Legends</a>
-    <a href="SMITE.php">SMITE</a>
-    <a href="StreetFighter.php">Street Fighter</a>
-    <a href="../OrgPage.php">Orginization Pages</a>
-    <a href="../Misc/About.php">About</a>
+    <a href="index.php">Home</a>
+    <a href="GamePages/League.php">League of Legends</a>
+    <a href="GamePages/SMITE.php">SMITE</a>
+    <a href="GamePages/StreetFighter.php">Street Fighter</a>
+    <a href="OrgPage.php">Orginization Pages</a>
+    <a href="Misc/About.php">About</a>
         <?php
     if(isset($_SESSION['u_id']) || isset($_SESSION['a_id'])) {
         
         
-        echo '<a href="../GamePages/login/logout.inc.php">Logout</a>';
+        echo '<a href="GamePages/login/logout.inc.php">Logout</a>';
     } else {
-        echo ' <a href="../GamePages/login/login.php">Login/Register</a>';
+        echo ' <a href="GamePages/login/login.php">Login/Register</a>';
     }
     if(isset($_SESSION['a_id'])) {
         echo '<a href="../GamePages/AdminTableChange.php">Change the Standings</a>';

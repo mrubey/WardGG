@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="../css/TeamPageStyle.css">
-<h1 id="standingsTitle" align="center">Spacestation Gaming</h1>
+<h1 id="standingsTitle" align="center">NRG Esports</h1>
 <h2 id="gameTitle" align="center">Smite Team</h2>
     <table id="standings" align = "center">
     <tr>
@@ -13,7 +13,7 @@
     if($conn-> connect_error) {
         die("Connection failed:". $conn-> connect_error);
     }
-    $sql = "SELECT First, Last, Screen, Position FROM smiteplayerlist WHERE Team='Spacestation Gaming'";
+    $sql = "SELECT First, Last, Screen, Position FROM smiteplayerlist WHERE Team='NRG Esports'";
     $result = $conn-> query($sql);
     
     if($result-> num_rows >0) {
@@ -26,5 +26,3 @@
     }
     $conn-> close();
     ?>
-        
- <img class="gamepic" src="../img/TeamLogos(SMITE)/SpaceStation.png">

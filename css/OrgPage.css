@@ -20,7 +20,7 @@
 
 /*Homepage specific */
 .body1{
-    background-color: black;
+    background-color: darkgray;
 }
 
 /*Icon CSS for the footers */
@@ -34,24 +34,8 @@
     color: white;
 }
 
-/* Need to fix*/
-.WardLogo{
-    font-family: 'Monoton', cursive;
-    color: white;
-    font-size: 25px;
-}
-.WardImage{
-    padding-bottom: 23px;
-    padding-top: 25px;
-    padding-left: 25px;
-    padding-right: 25px;
-    height: 275px;
-}
 
 .SFVHead {
     background-image: url(../img/SFV/StreetFighterRyu1.png);
-    
-}
-#standings {
-    font-color: white;
+    height: inherit;
 }

@@ -1,6 +1,4 @@
-<?php
-session_start();
-?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -23,7 +21,7 @@ session_start();
         <!-- Stylesheet/Framework import -->
         <link rel="stylesheet" href="css/slick/slick.css"/>
         <link rel="stylesheet" href="css/slick/slick-theme.css"/>
-        <link rel="stylesheet" href="css/main.css"/>
+        <link rel="stylesheet" href="css/OrgPage.css"/>
         <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
         <!-- Icon sheet -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -34,53 +32,58 @@ session_start();
     </head>
     
 <body class="body1">
+<div class="Navigation">
+    <?php include 'SideNavigation2.php'; ?>
+    </div>
     
       <!-- Alter padding on all sides, implement bootstrap -->
     <div class="container"> 
-        <div class="gamepic"><a href="TeamPages/Spacestation.php"><img class="img-responsive" src="img/TeamLogos(SMITE)/SpaceStation.png" alt="SFV"></a></div>
         
-        <div class="gamepic"><a href="GamePages/Smite.php"><img class="img-responsive" src="img/TeamLogos(SMITE)/Trifecta.png" alt="SMITE"></a></div>
+        <div class="gamepic"><a href="TeamPages/100Thieves.php"><img class="img-responsive" src="img/TeamLogos(LoL)/100Thieves.png"></a></div>
         
-        <div class="gamepic"><a href="GamePages/League.php"><img class="img-responsive" src="img/TeamLogos(SMITE)/Splyce.png" alt="LoL"></a></div>
+        <div class="gamepic"><a href="TeamPages/Cloud9.php"><img class="img-responsive" src="img/TeamLogos(LOL)/Cloud9.png"></a></div>
         
-        <div class="underdev"><a href="GamePages/UnderDevelopment.html"><img class="img-responsive" src="img/Overwatch.jpg" alt="Overwatch"></a></div>
+        <div class="gamepic"><a href="TeamPages/ClutchGaming.php"><img class="img-responsive" src="img/TeamLogos(LOL)/ClutchGaming.png"></a></div>
         
-        <div class="underdev"><a href="GamePages/UnderDevelopment.html"><img class="img-responsive" src="img/Counter-Strike_%20Global%20Offensive.jpg" alt="CSGO"></a></div>       
+        <div class="gamepic"><a href="TeamPages/CounterLogic.php"><img class="img-responsive" src="img/TeamLogos(SMITE)/CounterLogic.png"></a></div>
+        
+        <div class="gamepic"><a href="TeamPages/Dignitas.php"><img class="img-responsive" src="img/TeamLogos(SMITE)/TeamDignitas.png"></a></div>
+        
+        <div class="gamepic"><a href="TeamPages/EchoFox.php"><img class="img-responsive" src="img/TeamLogos(LOL)/Echo_Fox.png"></a></div>
+        
+        <div class="gamepic"><a href="TeamPages/Eunited.php"><img class="img-responsive" src="img/TeamLogos(SMITE)/EUnited.png"></a></div>
+        
+        <div class="gamepic"><a href="TeamPages/FlyQuest.php"><img class="img-responsive" src="img/TeamLogos(LOL)/FlyQuest.png"></a></div>
+        
+        <div class="gamepic"><a href="TeamPages/GoldenGuardians.php"><img class="img-responsive" src="img/TeamLogos(LOL)/GoldenGuardians.png"></a></div>
+        
+        <div class="gamepic"><a href="TeamPages/Luminosity.php"><img class="img-responsive" src="img/TeamLogos(SMITE)/Luminosity.png"></a></div>
+        
+        <div class="gamepic"><a href="TeamPages/Mousesports.php"><img class="img-responsive" src="img/TeamLogos(SMITE)/Mousesports.png"></a></div>
+        
+        <div class="gamepic"><a href="TeamPages/NRG.php"><img class="img-responsive" src="img/TeamLogos(SMITE)/NRGEsports.png"></a></div>
+        
+        <div class="gamepic"><a href="TeamPages/Obey.php"><img class="img-responsive" src="img/TeamLogos(SMITE)/Obey_Alliance.png"></a></div>
+        
+        <div class="gamepic"><a href="TeamPages/OpticGaming.php"><img class="img-responsive" src="img/TeamLogos(LOL)/OpticGaming.png"></a></div>
+        
+        <div class="gamepic"><a href="TeamPages/Rival.php"><img class="img-responsive" src="img/TeamLogos(SMITE)/Rival.png"></a></div>
+        
+        <div class="gamepic"><a href="TeamPages/SKGaming.php"><img class="img-responsive" src="img/TeamLogos(SMITE)/SK.png"></a></div>
+        
+        <div class="gamepic"><a href="TeamPages/Spacestation.php"><img class="img-responsive" src="img/TeamLogos(SMITE)/SpaceStation.png"></a></div>
+        
+        <div class="gamepic"><a href="TeamPages/TeamLiquid.php"><img class="img-responsive" src="img/TeamLogos(LoL)/TeamLiquid.png"></a></div>
+        
+        <div class="gamepic"><a href="TeamPages/SoloMid.php"><img class="img-responsive" src="img/TeamLogos(LOL)/TeamSoloMid.png"></a></div>
+        
+        <div class="gamepic"><a href="TeamPages/Splyce.php"><img class="img-responsive" src="img/TeamLogos(SMITE)/Trifecta.png"></a></div>
+        
+        <div class="gamepic"><a href="TeamPages/Trifecta.php"><img class="img-responsive" src="img/TeamLogos(SMITE)/Splyce.png"></a></div>
+
     </div>
     
-    <!-- Begin the footers using Bootstrap -->
-    <div class="WardImage text-center">
-        
-        <!-- Fix image splitting -->
-        <img src="img/Ward.png">
-    
-    </div>
-    <div class="LOGO text-center">
-    
-        <p class="WardLogo text-center">Ward GG</p>
-    
-       <?php
-    if(isset($_SESSION['u_id']) || isset($_SESSION['a_id'])) {
-        
-        
-        echo '<a href="GamePages/login/logout.inc.php">Logout</a>';
-    } else {
-        echo ' <a href="GamePages/login/login.php">Login/Register</a>';
-    }
-        ?>
-    </div>
-    
-    <!-- page footer -->
-<footer class="page-footer">
-    
-   <div>
-    <!-- Footer class finish later -->
-    <ul class="list-unstyled list-inline text-center">
-        <li class="list-inline-item"><a href="https://www.reddit.com/r/Esports" target="_blank" class="fa fa-reddit"></a></li>
-        <li class="list-inline-item"><a href="https://www.linkedin.com" target="_blank" class="fa fa-linkedin"></a></li>
-        <li class="list-inline-item"><a href="https://www.youtube.com" target="_blank" class="fa fa-youtube"></a></li>
-    </ul>
-    </div>
+
     <div class="footer-copyright text-center">© 2018 Copyright:<a href="https://www.iup.edu"> IUP.EDU</a>
     
     </div>

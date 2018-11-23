@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="tableStyle.css">
+    <link rel="stylesheet" href="../css/TableStyle.css">
     
     <!-- Slick stylesheet -->
     <link rel="stylesheet" href="../css/slick/slick.css">
@@ -45,15 +45,15 @@
         <img class="gamepic" src="../img/TeamLogos(SMITE)/CounterLogic.png">
         <img class="gamepic" src="../img/TeamLogos(SMITE)/EUnited.png">
         <img class="gamepic" src="../img/TeamLogos(SMITE)/Luminosity.png">
-        <a href="../TeamPages/Spacestation.php"><img class="gamepic" src="../img/TeamLogos(SMITE)/SpaceStation.png"></a>
-        <a href="../TeamPages/Spacestation.php"><img class="gamepic" src="../img/TeamLogos(SMITE)/Splyce.png"></a>
+        <img class="gamepic" src="../img/TeamLogos(SMITE)/SpaceStation.png">
+        <img class="gamepic" src="../img/TeamLogos(SMITE)/Splyce.png">
         <img class="gamepic" src="../img/TeamLogos(SMITE)/Trifecta.png">
-        <img class="gamepic" src="../img/TeamLogos(SMITE)/Dignitas.png">
+        <img class="gamepic" src="../img/TeamLogos(SMITE)/TeamDignitas.png">
         <img class="gamepic" src="../img/TeamLogos(SMITE)/Mousesports.png">
-        <img class="gamepic" src="../img/TeamLogos(SMITE)/NRG.png">
+        <img class="gamepic" src="../img/TeamLogos(SMITE)/NRGEsports.png">
         <img class="gamepic" src="../img/TeamLogos(SMITE)/Obey_Alliance.png">
-        <img class="gamepic" src="../img/TeamLogos(SMITE)/TeamRival.png">
-        <img class="gamepic" src="../img/TeamLogos(SMITE)/SKGaming.png">
+        <img class="gamepic" src="../img/TeamLogos(SMITE)/Rival.png">
+        <img class="gamepic" src="../img/TeamLogos(SMITE)/SK.png">
     </div>
     
     <!-- <div class="container">
@@ -67,11 +67,11 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-3">
-                <p class="text-center" style="color: white"> Left Column</p>
+
                 <a class="twitter-timeline" href="https://twitter.com/SmitePro?ref_src=twsrc%5Etfw" data-tweet-limit="3">Tweets by SmitePro</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
             <div class="col-sm-6">
-                <p class="text-center" style="color: white"> Mid Column</p>
+
     <h1 id="standingsTitle" align="center">Smite SPL NA Standings</h1>
     <table id="standings" align = "center">
     <tr>
@@ -128,7 +128,7 @@
     ?>
             </div>
             <div class="col-sm-3">
-                <h1 class="text-center" style="color:white"> Right column</h1>
+
                 <?php 
     include_once 'twitch.php';
 ?>

@@ -14,7 +14,9 @@
     <!-- Stlyesheets -->
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+    <link rel="stylesheet" href="../css/TableStyle.css"> 
+    
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
    
@@ -26,7 +28,7 @@
     
 <body class="body1">
     
-    <div class="jumbotron text-center SFVHead">
+    <div class="jumbotron text-center" style="background-image: url(../img/SFV/StreetFighterRyu1.png)">
         <img src="../GameLogos/StreetFighterVLogo.png">
     </div>
     <div class="Navigation">
@@ -36,12 +38,12 @@
     <div class="container">
         <div class=row>
             <div class="col-sm-3">
-            <p style="color: white">Left Column</p>
+
                 <a class="twitter-timeline" href="https://twitter.com/StreetFighter?ref_src=twsrc%5Etfw" data-tweet-limit="5">Tweets by StreetFighter</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
             <div class="col-sm-6 text-center">
-            <p style="color:white"> Mid Column</p>
-                <table id="SFTable" style="color:white">
+    <h1 id="standingsTitle" align="center">Street Fighter Standings</h1>
+    <table id="SFTable" style="color:black">
     <tr>
         <th>Rank</th>
         <th>Name</th>
@@ -72,7 +74,7 @@
     ?>
             </div>
             <div class="col-sm-3 text-center">
-            <p style="color: white"> Right Column</p>
+
 <?php 
     include_once 'twitchSF.php';
 ?>
