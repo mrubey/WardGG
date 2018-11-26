@@ -66,6 +66,7 @@
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <a href="../index.php">Home</a>
     <a href="../GamePages/League.php">League of Legends</a>
+     <a href="Rainbow.php">Rainbow 6 Siege</a>
     <a href="SMITE.php">SMITE</a>
     <a href="StreetFighter.php">Street Fighter</a>
     <a href="../OrgPage.php">Orginization Pages</a>

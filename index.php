@@ -43,9 +43,10 @@ session_start();
         
         <div class="gamepic"><a href="GamePages/League.php"><img class="img-responsive" src="img/League%20of%20Legends.jpg" alt="LoL"></a></div>
         
-        <div class="underdev"><a href="GamePages/UnderDevelopment.html"><img class="img-responsive" src="img/Overwatch.jpg" alt="Overwatch"></a></div>
+        <div class="gamepic"><a href="GamePages/Rainbow.php"><img class="img-responsive" src="img/Rainbow6.jpg" alt="Rainbow 6"></a></div> 
         
-        <div class="underdev"><a href="GamePages/UnderDevelopment.html"><img class="img-responsive" src="img/Counter-Strike_%20Global%20Offensive.jpg" alt="CSGO"></a></div>       
+        <div class="underdev"><a href="GamePages/UnderDevelopment.html"><img class="img-responsive" src="img/Overwatch.jpg" alt="Overwatch"></a></div>
+              
     </div>
     
     <!-- Begin the footers using Bootstrap -->

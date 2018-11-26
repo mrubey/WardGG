@@ -39,13 +39,13 @@
 <div class="container" style="color:white">
    <div id="header" class="text-center">
       <h1> Top Twitch Channels</h1>
-       <a href="https://www.twitch.tv/dmbrandon"target="blank">
+       <a href="https://www.twitch.tv/capcomfighters"target="blank">
       <h2 id="fccStatus1"></h2>
        </a>
-       <a href="https://www.twitch.tv/weak3n"target="blank">
+       <a href="https://www.twitch.tv/DaigoTheBeastTV"target="blank">
       <h2 id="fccStatus2"></h2>
        </a>
-       <a href="https://www.twitch.tv/hireztv"target="blank">
+       <a href="https://www.twitch.tv/poongko"target="blank">
       <h2 id="fccStatus3"></h2>
        </a>
    </div>

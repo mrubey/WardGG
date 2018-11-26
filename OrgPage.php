@@ -53,6 +53,8 @@
         
         <div class="gamepic"><a href="TeamPages/Eunited.php"><img class="img-responsive" src="img/TeamLogos(SMITE)/EUnited.png"></a></div>
         
+        <div class="gamepic"><a href="TeamPages/EvilGenuises.php"><img class="img-responsive" src="img/TeamLogos(Rainbow)/EvilGenuises.png"></a></div>
+        
         <div class="gamepic"><a href="TeamPages/FlyQuest.php"><img class="img-responsive" src="img/TeamLogos(LOL)/FlyQuest.png"></a></div>
         
         <div class="gamepic"><a href="TeamPages/GoldenGuardians.php"><img class="img-responsive" src="img/TeamLogos(LOL)/GoldenGuardians.png"></a></div>
@@ -61,6 +63,8 @@
         
         <div class="gamepic"><a href="TeamPages/Mousesports.php"><img class="img-responsive" src="img/TeamLogos(SMITE)/Mousesports.png"></a></div>
         
+        <div class="gamepic"><a href="TeamPages/Noble.php"><img class="img-responsive" src="img/TeamLogos(Rainbow)/NobleEsports.png"></a></div>
+        
         <div class="gamepic"><a href="TeamPages/NRG.php"><img class="img-responsive" src="img/TeamLogos(SMITE)/NRGEsports.png"></a></div>
         
         <div class="gamepic"><a href="TeamPages/Obey.php"><img class="img-responsive" src="img/TeamLogos(SMITE)/Obey_Alliance.png"></a></div>
@@ -68,6 +72,8 @@
         <div class="gamepic"><a href="TeamPages/OpticGaming.php"><img class="img-responsive" src="img/TeamLogos(LOL)/OpticGaming.png"></a></div>
         
         <div class="gamepic"><a href="TeamPages/Rival.php"><img class="img-responsive" src="img/TeamLogos(SMITE)/Rival.png"></a></div>
+        
+        <div class="gamepic"><a href="TeamPages/Rogue.php"><img class="img-responsive" src="img/TeamLogos(Rainbow)/Rogue.png"></a></div>
         
         <div class="gamepic"><a href="TeamPages/SKGaming.php"><img class="img-responsive" src="img/TeamLogos(SMITE)/SK.png"></a></div>
         

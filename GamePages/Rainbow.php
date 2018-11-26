@@ -35,25 +35,21 @@
     
 <body class="body1">
     
-    <div class="jumbotron text-center" style="background-image: url(../img/SMITE/Bellona.png)">
-        <img src="../GameLogos/SmiteLogo.png">
+    <div class="jumbotron text-center" style="background-image: url(../img/Rainbow6/Rainbowsix.jpg)">
+        <img src="../GameLogos/RainbowLogo.png">
              </div>
     <div class="Navigation">
     <?php include 'SideNavigation.php'; ?>
     </div>
-    <div class="container team-logos" style="background-color: darkgrey">
-        <img class="gamepic" src="../img/TeamLogos(SMITE)/CounterLogic.png">
-        <img class="gamepic" src="../img/TeamLogos(SMITE)/EUnited.png">
-        <img class="gamepic" src="../img/TeamLogos(SMITE)/Luminosity.png">
-        <img class="gamepic" src="../img/TeamLogos(SMITE)/SpaceStation.png">
-        <img class="gamepic" src="../img/TeamLogos(SMITE)/Splyce.png">
-        <img class="gamepic" src="../img/TeamLogos(SMITE)/Trifecta.png">
-        <img class="gamepic" src="../img/TeamLogos(SMITE)/TeamDignitas.png">
-        <img class="gamepic" src="../img/TeamLogos(SMITE)/Mousesports.png">
-        <img class="gamepic" src="../img/TeamLogos(SMITE)/NRGEsports.png">
-        <img class="gamepic" src="../img/TeamLogos(SMITE)/Obey_Alliance.png">
-        <img class="gamepic" src="../img/TeamLogos(SMITE)/Rival.png">
-        <img class="gamepic" src="../img/TeamLogos(SMITE)/SK.png">
+    <div class="container team-logos" style="background-color: grey">
+        <img class="gamepic" src="../img/TeamLogos(Rainbow)/Cloud9.png">
+        <img class="gamepic" src="../img/TeamLogos(Rainbow)/EvilGenuises.png">
+        <img class="gamepic" src="../img/TeamLogos(Rainbow)/Mousesports.png">
+        <img class="gamepic" src="../img/TeamLogos(Rainbow)/NobleEsports.png">
+        <img class="gamepic" src="../img/TeamLogos(Rainbow)/Obey_Alliance.png">
+        <img class="gamepic" src="../img/TeamLogos(Rainbow)/Rogue.png">
+        <img class="gamepic" src="../img/TeamLogos(Rainbow)/SK.png">
+        <img class="gamepic" src="../img/TeamLogos(Rainbow)/SpaceStation.png">
     </div>
     
     <!-- <div class="container">
@@ -68,16 +64,18 @@
         <div class="row">
             <div class="col-sm-3">
 
-                <a class="twitter-timeline" href="https://twitter.com/SmitePro?ref_src=twsrc%5Etfw" data-tweet-limit="3">Tweets by SmitePro</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <a class="twitter-timeline" href="https://twitter.com/r6proleague?ref_src=twsrc%5Etfw" data-tweet-limit="3">Tweets by SmitePro</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
             <div class="col-sm-6">
 
-    <h1 id="standingsTitle" align="center">Smite SPL NA Standings</h1>
+    <h1 id="standingsTitle" align="center">Rainbow 6 NA Standings</h1>
     <table id="standings" align = "center">
     <tr>
         <th>Position</th>
         <th>Team</th>
+        <th>Points</th>
         <th>Wins</th>
+        <th>Draws</th>
         <th>Losses</th>
     </tr>
     <?php
@@ -85,40 +83,12 @@
     if($conn-> connect_error) {
         die("Connection failed:". $conn-> connect_error);
     }
-    $sql = "SELECT Position, Team, Wins, Losses FROM splNaStandings";
+    $sql = "SELECT Position, Points, Team, Wins, Draws, Losses FROM rainbowsixstandings";
     $result = $conn-> query($sql);
     
     if($result-> num_rows >0) {
         while($row = $result-> fetch_assoc()) {
-            echo "<tr><td>". $row["Position"] ."</td><td>". $row["Team"] ."</td><td>". $row["Wins"] ."</td><td>". $row["Losses"]. "</td></tr>";
-        }
-        echo "</table>";
-    } else {
-        echo "0 result";
-    }
-    $conn-> close();
-    ?>
-    <br>
-    <br>
-    <h1 id="standingsTitle" align="center">Smite SPL EU Standings</h1>
-    <table id="standings" align = "center">
-    <tr>
-        <th>Position</th>
-        <th>Team</th>
-        <th>Wins</th>
-        <th>Losses</th>
-    </tr>
-    <?php
-    $conn = mysqli_connect("localhost", "root", "", "wardgg");
-    if($conn-> connect_error) {
-        die("Connection failed:". $conn-> connect_error);
-    }
-    $sql = "SELECT Position, Team, Wins, Losses FROM spleustandings";
-    $result = $conn-> query($sql);
-    
-    if($result-> num_rows >0) {
-        while($row = $result-> fetch_assoc()) {
-            echo "<tr><td>". $row["Position"] ."</td><td>". $row["Team"] ."</td><td>". $row["Wins"] ."</td><td>". $row["Losses"]. "</td></tr>";
+            echo "<tr><td>". $row["Position"] ."</td><td>". $row["Team"] ."</td><td>". $row["Points"] ."</td><td>". $row["Wins"] ."</td><td>". $row["Draws"] ."</td><td>". $row["Losses"]. "</td></tr>";
         }
         echo "</table>";
     } else {
@@ -130,7 +100,7 @@
             <div class="col-sm-3">
 
                 <?php 
-    include_once 'twitch.php';
+    include_once 'twitchRainbow.php';
 ?>
             </div>
         </div>
