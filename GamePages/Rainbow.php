@@ -35,7 +35,7 @@
     
 <body class="body1">
     
-    <div class="jumbotron text-center" style="background-image: url(../img/Rainbow6/Rainbowsix.jpg)">
+    <div class="jumbotron text-center" style="background-image: url(../GameBackgroundImages/RainbowSix.jpg)">
         <img src="../GameLogos/RainbowLogo.png">
              </div>
     <div class="Navigation">
